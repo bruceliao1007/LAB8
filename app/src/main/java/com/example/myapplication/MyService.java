@@ -1,4 +1,4 @@
-package com.example.lab8;
+package com.example.myapplication;
 
 import android.app.Service;
 import android.content.Intent;
@@ -14,9 +14,9 @@ public class MyService extends Service {
                 try {
                     Thread.sleep(5000);
                     Intent intent = new Intent(MyService.this,
-                            Main2Activity.class );
+                            MainActivity2.class );
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                   MyService.this.startActivities(new Intent[]{intent});
+                    MyService.this.startActivities(new Intent[]{intent});
 
                 }catch (InterruptedException e){
                     e.printStackTrace();
